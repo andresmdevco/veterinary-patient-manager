@@ -8,6 +8,7 @@ export default function PatientForm() {
   const addPatient = usePatientStore((state) => state.addPatient);
   const activeId = usePatientStore((state) => state.activeId);
   const patients = usePatientStore((state) => state.patients);
+  const updatePatient = usePatientStore((state) => state.updatePatient);
 
   const {
     register,
@@ -18,19 +19,23 @@ export default function PatientForm() {
   } = useForm<DraftPatient>();
 
   useEffect(() => {
-    if(activeId) {
-      const activePatient = patients.filter(patient => patient.id === activeId)[0]
-      
-      setValue('name', activePatient.name)
-      setValue('caretaker', activePatient.caretaker)
-      setValue('email', activePatient.email)
-      setValue('date', activePatient.date)
-      setValue('symptoms', activePatient.symptoms)
+    if (activeId) {
+      const activePatient = patients.filter((patient) => patient.id === activeId)[0];
+
+      setValue('name', activePatient.name);
+      setValue('caretaker', activePatient.caretaker);
+      setValue('email', activePatient.email);
+      setValue('date', activePatient.date);
+      setValue('symptoms', activePatient.symptoms);
     }
-  }, [activeId, patients, setValue])
+  }, [activeId, patients, setValue]);
 
   const registerPatient = (data: DraftPatient) => {
-    addPatient(data);
+    if (activeId) {
+      updatePatient(data);
+    } else {
+      addPatient(data);
+    }
 
     reset();
   };
