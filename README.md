@@ -50,7 +50,7 @@ Además:
 8. Al presionar "Eliminar", se dispara `deletePatient`, que filtra al paciente del array `patients`.
 9. Cada acción exitosa (registrar, actualizar, eliminar) dispara una notificación con `react-toastify`, mostrada por el `ToastContainer` en `App.tsx`.
 
-## 📚 Conceptos practicados
+## 📚 Conceptos aplicados
 - Manejo de estado global con **Zustand**, usando el patrón `create<Type>()(...)` con tipado explícito del store.
 - Composición de middlewares de Zustand: `devtools` (inspección en DevTools) y `persist` (persistencia automática en `localStorage`).
 - Formularios con **react-hook-form**: `register`, `handleSubmit`, `setValue`, `reset` y manejo de `formState.errors`.
