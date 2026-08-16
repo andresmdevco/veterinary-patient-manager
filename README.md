@@ -1,4 +1,4 @@
-# 🐾 Veterinary Patient Manager
+# 🐾 Control de Pacientes Veterinarios
 Aplicación web construida con **React**, **TypeScript** y **Tailwind CSS** para el seguimiento de pacientes de una veterinaria. Permite registrar, editar y eliminar pacientes con sus datos y síntomas, con estado global gestionado mediante **Zustand** y persistencia automática entre sesiones.
 
 ## 🌐 Demo
