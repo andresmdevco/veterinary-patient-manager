@@ -4,6 +4,9 @@ Aplicación web construida con **React**, **TypeScript** y **Tailwind CSS** para
 ## 🌐 Demo
 🔗 [https://veterinary-patient-manager.vercel.app/](https://veterinary-patient-manager.vercel.app/)
 
+## 👀 Vista previa
+https://github.com/user-attachments/assets/52d87cb9-2ada-401e-87f6-aa980dbe1483
+
 ## 🛠️ Tecnologías Utilizadas
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
